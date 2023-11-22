@@ -32,7 +32,7 @@ const puppeteer = require('puppeteer');
     await page.goto('http://127.0.0.1:5500/index.html'); 
   
 
-    await page.click('#button2', { clickCount: 2 }); // Подвійний клік на 2-у кнопку
+    await page.click('#button2', { clickCount: 2 });
     await page.waitForTimeout(1000);
 
     const secondColor = await page.evaluate(() => {
