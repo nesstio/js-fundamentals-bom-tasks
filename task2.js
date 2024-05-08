@@ -5,3 +5,20 @@
 //         
 // Запустіть виконане завдання за допомогою Live Server 
 // Перевірте виконання за допомогою команди node tests/task2.test.js
+
+const buttonChageBackgroundToBlue = document.getElementById("button1");
+const backgoround = document.body;
+const buttonChageBackgroundToPink = document.getElementById("button2");
+const buttonChageBackgroundToBrown = document.getElementById("button3");
+
+buttonChageBackgroundToBlue.addEventListener('click', ()=>{
+    backgoround.style.backgroundColor = "blue";
+});
+
+buttonChageBackgroundToPink.addEventListener('dblclick', () => {
+    backgoround.style.backgroundColor = "pink";
+});
+
+buttonChageBackgroundToBrown.addEventListener('mouseover', () => {
+    backgoround.style.backgroundColor = "brown";
+});
